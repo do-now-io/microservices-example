@@ -19,8 +19,6 @@
   },
   "scripts": {
     "start": "node -r esm src/index.js",
-    "build": "docker build -f Dockerfile . -t books",
-    "publish": "            sh \"/kaniko/executor -f `pwd`/docker/Dockerfile -c `pwd` --destination=ilm-automation-docker-virtual.enterpriserepo.fr.carrefour.com/kpi_import_data:${version}\"\n",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

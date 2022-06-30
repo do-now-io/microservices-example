@@ -19,7 +19,6 @@
   },
   "scripts": {
     "start": "node -r esm src/index.js",
-    "build": "docker build -f Dockerfile . -t gateway",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
