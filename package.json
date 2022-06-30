@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.1.6",
+    "nx": "^14.3.6"
+  },
+  "scripts": {
+    "start": "lerna run start"
+  }
+}

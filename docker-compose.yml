@@ -1,0 +1,23 @@
+services:
+  gateway:
+    build:
+      context: packages/gateway
+      dockerfile: Dockerfile
+    container_name: gateway
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./packages/gateway:/app
+    links:
+      - books
+    environment:
+      - BOOKS_API_URL=http://books:3001
+  books:
+    build:
+      context: packages/books
+      dockerfile: Dockerfile
+    container_name: books
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./packages/books:/app
