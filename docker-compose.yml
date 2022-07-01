@@ -1,4 +1,15 @@
 services:
+  website:
+    build:
+      context: packages/website
+      dockerfile: Dockerfile
+    container_name: website
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./packages/website:/app
+    links:
+      - gateway
   gateway:
     build:
       context: packages/gateway

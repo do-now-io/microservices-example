@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Hugo Martin <hugo.martin@do-now.io>",
+  "homepage": "https://github.com/do-now-io/microservices-example#readme",
+  "license": "ISC",
+  "engines": {
+    "node": "^12.20 || >= 14.13"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/do-now-io/microservices-example.git"
+  },
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "event-target-shim": "^6.0.2",
+    "graphql-react": "^15.0.0",
+    "next": "latest",
+    "next-graphql-react": "^11.0.0",
+    "next-server-context": "^3.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
