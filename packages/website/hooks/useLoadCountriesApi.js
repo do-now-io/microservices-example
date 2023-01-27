@@ -6,7 +6,7 @@ export default function useLoadCountriesApi() {
 
   return useCallback(
     (cacheKey, graphqlOperation) => {
-      return loadGraphQL(cacheKey, 'http://localhost:4000', {
+      return loadGraphQL(cacheKey, 'http://gateway-default:4000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
