@@ -36,7 +36,7 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  csrfPrevention: true,
+  csrfPrevention: false,
   cache: 'bounded',
   healthCheckPath: "/status"
 });
