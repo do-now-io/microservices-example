@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "monorepo",
   "private": true,
   "devDependencies": {
     "lerna": "^5.1.6",
