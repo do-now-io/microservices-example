@@ -6,7 +6,7 @@ export default function useLoadCountriesApi() {
 
   return useCallback(
     (cacheKey, graphqlOperation) => {
-      return loadGraphQL(cacheKey, 'https://api.demo.do-now.io/', {
+      return loadGraphQL(cacheKey, 'https://api.demo-staging.do-now.io/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

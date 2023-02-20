@@ -7,7 +7,8 @@ var server = http.createServer(function (req, res) {
         res.writeHead(200, {'Content-Type': 'application/json'});
         res.end(JSON.stringify({
             "status": "pass",
-            "automatic-updates": "true"
+            "automatic-updates": "true",
+            "env": "dev"
         }));
     }
     else {

@@ -46,4 +46,6 @@ jobs:
         with:
           context: packages/${{ matrix.value }}
           push: true
-          tags: ${{ steps.login-ecr.outputs.registry }}/${{ matrix.value }}:${{ github.sha }}
+          tags: |
+            ${{ steps.login-ecr.outputs.registry }}/${{ matrix.value }}:${{ github.sha }}
+            ${{ steps.login-ecr.outputs.registry }}/${{ matrix.value }}:latest
