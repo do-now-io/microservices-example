@@ -13,7 +13,7 @@ jobs:
       - name: Installing node.js
         uses: actions/setup-node@v3 # Used to install node environment - https://github.com/actions/setup-node
         with:
-          node-version: 14
+          node-version: 18
       - name: Checkout repo
         uses: actions/checkout@master
       - id: matrix

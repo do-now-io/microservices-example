@@ -43,7 +43,7 @@ export default function IndexPage() {
         cacheValue={cacheValue}
         renderData={(data) => (
           <article>
-            <h1>Books</h1>
+            <h1>Books list</h1>
             <ul>
               {data.books.map(({ title, author }) => (
                 <li>
